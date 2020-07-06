@@ -57,11 +57,11 @@ function archiveSheetByWeek_() {
          break;
        } else {
          if(theMap[values[j][0]]) {
-           testCasesMap[values[j][0]]['col_B'] +=  (", " + (values[j][1] ? values[j][1] : "NotFound"));           
-           testCasesMap[values[j][0]]['col_C'] +=  (", " + (values[j][2] ? values[j][2] : "NotFound"));           
-           testCasesMap[values[j][0]]['col_D'] +=  (", " + (values[j][3] ? values[j][3] : "NotFound"));           
+           theMap[values[j][0]]['col_B'] +=  (", " + (values[j][1] ? values[j][1] : "NotFound"));           
+           theMap[values[j][0]]['col_C'] +=  (", " + (values[j][2] ? values[j][2] : "NotFound"));           
+           theMap[values[j][0]]['col_D'] +=  (", " + (values[j][3] ? values[j][3] : "NotFound"));           
          } else {
-           testCasesMap[values[j][0]] = {
+           theMap[values[j][0]] = {
               col_B: values[j][1] ? values[j][1] : "NotFound", 
               col_C : values[j][2] ? values[j][2] : "NotFound", 
               col_D : values[j][3] ? values[j][3] : "NotFound",  
